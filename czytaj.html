@@ -14,9 +14,9 @@
 
     <link rel="icon" href="new_icon.svg">
 
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
+<body id="bodyCzytaj">
     <div id="mainContainer">
         <header id="nav">
                 <div id="right">
@@ -33,22 +33,49 @@
 
                 <div id="left">
                     <a href="index.html#glowna">Strona główna</a>
-                    <a href="index.html#mozliwosci">Możliwości</a>
-                    <a href="index.html#zombek">Zomb</a>
                 </div>
         </header>
-        <main>
+        <main id="mainCzytaj">
                 <div id="glowna">
                 <h2 id="typewriter">&nbsp;</h2>
                 </div>
-                <p>
-                    Witamy na stronie poświęconej trylogii <i>Firey x Nerd</i>! <br>
-                    Znajdziesz tutaj wszystko czego byś potrzebował do zagłębienia się w ten niesamowity, pełen niespodzianek i
-                    zwariowany świat.
-                </p>
+
+                <div class="col">
+                    <p id="czytajMarginP">
+                        Zobacz dostępne pozycje
+                    </p>
+                    <a href="czytaj.html#booksRow">
+                        <img src="downArrow.svg" alt="arrow">
+                    </a>
+                </div>
         </main>
+        <div id="booksList">
+            <div class="center">
+                <h2>Bilbioteka</h2>
+            </div>
+            <div id="booksRow">
+                <div id="fxn1Read">
+                    <a href="fxn1.html">
+                        <img class="unavaible" src="fxn1.png" alt="fxn 1">
+                    </a>
+                </div>
+                
+                <div>
+                    <img class="unavaible" src="fxn2.png" alt="fxn 1">
+                </div>
+                <div>
+                    <img class="unavaible" src="fxn3.png" alt="fxn 1">
+                </div>
+                <div>
+                    <img class="unavaible" src="fxn4.png" alt="fxn 1">
+                </div>
+            </div>
+        </div>
         
     </div>
+    <footer>
+
+    </footer>
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -57,7 +84,7 @@
     </script>
     <script>
         const element = document.getElementById("typewriter");
-        let tekst = "Witaj na naszej stronie!";
+        let tekst = "Zanurz się w świat FxN!";
         let chars = tekst.split('');
         let i = 0;
         let kierunek = true; // true -> pisze, false -> odejdmuje
@@ -83,7 +110,7 @@
             else{
                 
                 if(kierunek){
-                    i = 3;
+                    i = 4;
                     kierunek = false;
                 }
                 else{

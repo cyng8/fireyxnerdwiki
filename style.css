@@ -1,5 +1,5 @@
 *{
-    font-family: 'JetBrainsMono Nerd Font';
+    font-family: "JetBrains Mono", monospace;
     padding: 0px;
     margin: 0px;
     color: white;
@@ -408,6 +408,215 @@ footer p{
 }
 #czytajBox h2{
     transition: color 0.1s ease-in-out;
+}
+
+/*  CZYTAJ  */
+#bodyCzytaj{
+    background: linear-gradient(236deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    scroll-margin-top: 500px;
+}
+#czytajMarginP{
+    margin-top: 100px;
+}
+#blackArrow{
+    height: 100px;
+    width: 100px;
+    transform: rotate(110deg);
+    margin-top: 100px;
+    filter: invert(90%);
+    
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col p{
+    max-width: 100%;
+}
+.col img{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.068);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px;
+}
+.col img:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+    transition: 0.2s ease background-color;
+}
+#booksList{
+    width: auto;
+    height: 1000px;
+    background-color: white;
+    padding: 40px;
+}
+#booksRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+#booksRow img{
+    border-radius: 30px;
+    width: 350px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.37);
+}
+.unavaible{
+    position: relative;
+    filter: grayscale(100%);
+    border: 0px black solid;
+    transition: transform 0.6s ease, box-shadow 0.6s ease, border 0.6s ease, filter 0.15s ease-in-out;
+}
+.unavaible:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 2px white solid;
+    z-index: 10;
+}
+#fxn1Read{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#booksList h2{
+    color: black;
+    margin-bottom: 100px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#readBox{
+    width: auto;
+    height: 23000px;
+    margin-top: 100px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#readBox h2{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#readBoxP{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#readBox p{
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+    max-width: 700px;
+}
+#readBox #firstletter::first-letter{
+    font-size: 50px;
+}
+#readBody{
+    background: transparent;
+    background-color: rgb(49, 49, 49);
+    scroll-margin-top: 0px;
+}
+#chapter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#chapter h3{
+    text-align: center;
+    color: rgb(63, 147, 216); 
+    font-size: 80px; 
+    margin-top: 100px;
+}
+#chapter h4{
+    color: rgb(126, 143, 156); 
+    font-size: 40px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+#firejName{
+    color: orange;
+}
+#zombekName{
+    color: rgb(174, 203, 228);
+}
+#unknownName{
+    color: rgb(168, 168, 168);
+}
+#nerdName{
+    color: rgb(243, 157, 239);
+}
+#kertoipName{
+    color: red;
+}
+#lukaszenkaName{
+    color: rgb(113, 211, 113);
+}
+#brajanName{
+    color: rgb(123, 221, 213);
+}
+#zentyczkaName{
+    color: rgb(180, 72, 202);
+}
+
+#controlsUp{
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    margin: 20px;
+    margin-right: 10px;
+
+    transform: rotate(180deg);
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 15px;
+
+    transition: background-color ease-in-out 0.1s;
+}
+#controlsUp:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+#controlsDown{
+    position: fixed;
+    top: 91%;
+    right: 0px;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    margin: 20px;
+    margin-right: 10px;
+
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 15px;
+
+    transition: background-color ease-in-out 0.1s;
+}
+#controlsDown:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+#navigator{
+
 }
 
 
